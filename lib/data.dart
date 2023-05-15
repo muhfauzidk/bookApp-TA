@@ -73,14 +73,14 @@ class BookDetailResponse {
 
 class BookListResponse {
   String? error;
-  int? total;
-  List<dynamic>? books;
+  String? total;
+  List<Books>? books;
 
   BookListResponse({this.error, this.total, this.books});
 
   BookListResponse.fromJson(Map<String, dynamic> json) {
     error = json['error'];
-    total = int.tryParse(json['total'].toString());
+    total = json['total'];
     if (json['books'] != null) {
       books = <Books>[];
       json['books'].forEach((v) {
