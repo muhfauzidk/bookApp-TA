@@ -1,4 +1,0 @@
-#Sat Dec 24 22:55:55 ICT 2022
-base.0=D\:\\UZI\\Latihan\\Bootcamp Flutter by Edspert.id\\Project\\book_app\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

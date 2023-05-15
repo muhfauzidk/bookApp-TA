@@ -1,4 +1,0 @@
-#Mon May 15 12:57:56 ICT 2023
-base.0=D\:\\TA\\Project\\book_app (no pattern)\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
