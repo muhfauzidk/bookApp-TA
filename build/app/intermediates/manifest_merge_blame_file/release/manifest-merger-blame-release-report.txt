@@ -1,0 +1,152 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.book_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:3:4-65
+11-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:3:21-63
+12
+13    <!-- #docregion android-queries -->
+14    <!-- Provide required visibility configuration for API level 30 and above -->
+15    <queries>
+15-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:7:5-28:15
+16
+17        <!-- If your app opens https URLs -->
+18        <intent>
+18-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:9:5-12:14
+19            <action android:name="android.intent.action.VIEW" />
+19-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:10:9-61
+19-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:10:17-58
+20
+21            <data android:scheme="https" />
+21-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:11:9-40
+21-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:11:15-37
+22        </intent>
+23        <!-- If your app makes calls -->
+24        <intent>
+24-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:14:5-17:14
+25            <action android:name="android.intent.action.DIAL" />
+25-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:15:9-61
+25-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:15:17-58
+26
+27            <data android:scheme="tel" />
+27-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:11:9-40
+27-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:11:15-37
+28        </intent>
+29        <!-- If your sends SMS messages -->
+30        <intent>
+30-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:19:5-22:14
+31            <action android:name="android.intent.action.SENDTO" />
+31-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:20:9-63
+31-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:20:17-60
+32
+33            <data android:scheme="smsto" />
+33-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:11:9-40
+33-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:11:15-37
+34        </intent>
+35        <!-- If your app sends emails -->
+36        <intent>
+36-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:24:5-27:14
+37            <action android:name="android.intent.action.SEND" />
+37-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:25:9-61
+37-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:25:17-58
+38
+39            <data android:mimeType="*/*" />
+39-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:11:9-40
+39-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:26:15-37
+40        </intent>
+41    </queries>
+42    <!-- #enddocregion android-queries -->
+43    <application
+44        android:name="android.app.Application"
+44-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:32:9-42
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.6.0] C:\Users\UZI\.gradle\caches\transforms-3\acbce933e4b464a5224ed377a62db1f5\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+46        android:icon="@mipmap/ic_launcher"
+46-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:33:9-43
+47        android:label="book_app" >
+47-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:31:9-33
+48        <activity
+48-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:34:9-54:20
+49            android:name="com.example.book_app.MainActivity"
+49-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:35:13-41
+50            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+50-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:39:13-163
+51            android:exported="true"
+51-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:36:13-36
+52            android:hardwareAccelerated="true"
+52-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:40:13-47
+53            android:launchMode="singleTop"
+53-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:37:13-43
+54            android:theme="@style/LaunchTheme"
+54-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:38:13-47
+55            android:windowSoftInputMode="adjustResize" >
+55-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:41:13-55
+56
+57            <!--
+58                 Specifies an Android theme to apply to this Activity as soon as
+59                 the Android process has started. This theme is visible to the user
+60                 while the Flutter UI initializes. After that, this theme continues
+61                 to determine the Window background behind the Flutter UI.
+62            -->
+63            <meta-data
+63-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:46:13-49:17
+64                android:name="io.flutter.embedding.android.NormalTheme"
+64-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:47:15-70
+65                android:resource="@style/NormalTheme" />
+65-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:48:15-52
+66
+67            <intent-filter>
+67-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:50:13-53:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:51:17-68
+68-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:51:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:52:17-76
+70-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:52:27-74
+71            </intent-filter>
+72        </activity>
+73        <!--
+74             Don't delete the meta-data below.
+75             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+76        -->
+77        <meta-data
+77-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:57:9-59:33
+78            android:name="flutterEmbedding"
+78-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:58:13-44
+79            android:value="2" />
+79-->D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\android\app\src\main\AndroidManifest.xml:59:13-30
+80
+81        <activity
+81-->[:url_launcher_android] D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+82            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+82-->[:url_launcher_android] D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+83            android:exported="false"
+83-->[:url_launcher_android] D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+84            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+84-->[:url_launcher_android] D:\UZI\Latihan\Bootcamp Flutter by Edspert.id\Project\book_app\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+85
+86        <uses-library
+86-->[androidx.window:window:1.0.0-beta04] C:\Users\UZI\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+87            android:name="androidx.window.extensions"
+87-->[androidx.window:window:1.0.0-beta04] C:\Users\UZI\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+88            android:required="false" />
+88-->[androidx.window:window:1.0.0-beta04] C:\Users\UZI\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+89        <uses-library
+89-->[androidx.window:window:1.0.0-beta04] C:\Users\UZI\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+90            android:name="androidx.window.sidecar"
+90-->[androidx.window:window:1.0.0-beta04] C:\Users\UZI\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+91            android:required="false" />
+91-->[androidx.window:window:1.0.0-beta04] C:\Users\UZI\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+92    </application>
+93
+94</manifest>
